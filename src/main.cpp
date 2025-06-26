@@ -24,4 +24,19 @@ int main () {
         cout << "Failed to initialize GLAD" << endl;
         return -1;
     }
+glViewport(0,0,1080,720);
+
+while(!glfwWindowShouldClose(window)) {
+
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+    
+    glfwTerminate();
+    return 0;
+
 }
