@@ -17,4 +17,6 @@ void Window::launch_glfw_renderer(){
     if ( !gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "Failed to initialize GLAD" << endl;
     }
+
+    glViewport(0, 0, 800, 600);
 }
