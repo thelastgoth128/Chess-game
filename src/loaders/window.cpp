@@ -13,5 +13,8 @@ void Window::launch_glfw_renderer(){
         return;
     }
     glfwMakeContextCurrent(window);
-    
+
+    if ( !gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        cout << "Failed to initialize GLAD" << endl;
+    }
 }
