@@ -8,8 +8,5 @@ using namespace std;
 
 class Window {
     public:
-        void launch_glfw_renderer(); 
-        void initialize_buffers();
-
-   
+       static void launch_glfw_renderer(); 
 };
