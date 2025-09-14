@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include "shaders/shader.h"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ class Mesh {
         vector<Texture> textures;
 
         Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
-        void Draw(shader &shader);
+        void Draw(Shader &shader);
     
         private:
         //render data
